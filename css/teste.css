@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* texto */
+.titulo-1{ 
+  font-size: calc(1rem + 2vw);
+  font-weight: bold;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 5% 0 3%;
+}
+
+.paragrafo{
+  font-size: calc(1rem + .5vw);
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+/*  */
+
+/*botões*/
+.botao{
+  width: 4%;
+  height: 4%;
+  position: absolute;
+  background-image: url("../img/botao/botão__1_-removebg-preview.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 48.75%;
+  opacity: 80%;
+}
+
+.botao:hover{
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.botao-1{
+  top: 94vh;
+}
+
+.botao-2{
+  top: calc(194vh - 75px);
+}
+
+.button_modal{
+  width: 30%;
+  font-family: sans-serif;
+  margin: 2vh 0 9vh;
+  font-size: calc(1rem + .2vw);
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #215273;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  text-align: center;
+  color: white;
+  padding: 1.5vh 0;
+}
+
+.button_modal:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+/*  */
+
+/* Conteúdo */
+.facateste{
+  height: 100vh;
+  background-image: url("../img/teste/Teste_vocacional_auto_x2.png");
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.facateste .texto-facateste{
+  padding: calc(5% + 75px) 5% 5%;
+  width: 65%;
+}
+
+.facateste .paragrafo{
+  margin-right: 12vw;
+}
+
+.explicacao{
+  background-image: url("../img/teste/meio2-teste.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 75px);
+}
+
+.explicacao .texto-explicacao{
+  width: 50%;
+  padding-left: 2%;
+  text-align: left;
+}
+
+.explicacao .titulo-1{
+  margin-top: 0%;
+}
+
+.dicas{
+    background-image: url("../img/teste/foto3_maiorqualidade.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 75px);
+}
+
+.dicas .texto-dicas{
+    width: 48%;
+}
+
+
+/* Daqui pra frente só tem @media */
+
+/* @media max-height start  + Botões de Onepage somem*/
+  /* Quebrar os 100vh */
+  @media (max-height: 624px){
+  .facateste, .explicacao, .dicas{height: auto; padding: 10vh 5% 15vh;}
+  .botao{display: none;}
+  }
+/* @media max-height end */
+
+/* @media max-width start*/
+  @media (max-width: 1200px){
+    .facateste{background-position: center;}
+  }
+
+  @media (max-width: 1124px){
+    .button_modal{width: 35%;}
+  }
+
+  /* Largura máxima do Menu sanduíche */
+  @media (max-width: 992px){
+    .facateste .texto-facateste{padding-left: 2%; padding-right: 0%;}
+  }
+
+  @media (max-width: 770px){
+    .titulo-1{margin: 0 0 6%;}
+    .facateste{background-image: none; background-color: #58C0AD;}
+    .facateste .texto-facateste{width: 100%;}
+    .facateste .paragrafo{margin-right: 2%;}
+    .explicacao{background-image: none; background-color: #ebf5f3;}
+    .explicacao .texto-explicacao{width: 100%; padding-left: 2%;}
+    .dicas .texto-dicas{width: 100%; padding-left: 2%;}
+    .dicas{background-image: none; background-color: #215273;}
+    .dicas .titulo-1, .dicas .paragrafo{color: white;}
+    .button_modal{width: 35%;}
+  }
+
+  @media (max-width: 680px){
+    .botao{opacity: 100%;}
+    .facateste, .explicacao, .dicas{padding: 10vh 0%;}
+    .facateste section .texto-facateste, .explicacao section .texto-explicacao{width: 100%;}
+  }
+
+  @media (max-width: 400px){
+    .button_modal{width: 50%;}
+    .botao{width: 7%; height: 7%; left: 46.87%; opacity: 100%;}
+  }
+
+  @media (max-width: 300px){
+    .button, .button_modal{width: 60%;}
+  }
+/* @media max-width end*/

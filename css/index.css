@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* - */
+.titulo-1{
+  font-size: calc(1rem + 2vw);
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  margin: 5% 0;
+}
+
+.titulo-2{
+  font-size: calc(1rem + 1.5vw);
+  font-weight: bold;
+  text-align: center;
+  padding: 1vh 0 3vh;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titulo-3{
+  font-size: calc(1rem + .8vw);
+  margin: 6% 0 4%;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+
+.titulo-3 a{
+  color: black;
+} 
+
+.paragrafo{
+  font-size: calc(1rem + .5vw);
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.paragrafo a{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.paragrafo a:hover{
+  color: #215273;
+}
+
+.botao{
+  width: 4%;
+  height: 4%;
+  position: absolute;
+  background-image: url("../img/botao/botão__1_-removebg-preview.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 48.75%;
+  opacity: 80%;
+}
+
+.botao:hover{
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.botao-1{
+  top: 94vh;
+}
+
+.botao-2{
+  top: calc(194vh - 75px);
+}
+
+.button{
+  width: 33%;
+  font-family: sans-serif;
+  margin: 3vh 0 8vh;
+  font-size: calc(1rem + .2vw);
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #215273;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  display: flex;
+}
+
+.button_modal{
+  width: 33%;
+  font-family: sans-serif;
+  margin: 2vh 0 9vh;
+  font-size: calc(1rem + .2vw);
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #215273;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  text-align: center;
+  color: white;
+  padding: 1.5vh 0;
+}
+
+.button:hover, .button_modal:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.button a{
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 1.5vh 0;
+}
+
+.instituicoes, .descubra{
+  height: calc(100vh - 75px);
+} 
+
+.teste{
+  height: 100vh;
+  background-image: url("../img/index/menina_index.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.teste .texto-teste{
+  padding: calc(2.5% + 75px) 0 0 5%;
+  width: 50%;
+}
+
+.instituicoes{
+  background-image: url("../img/index/meio-index.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.instituicoes section .texto-instituicoes{
+  width: 50%;
+  padding-left: 2%;
+}
+
+.descubra{
+  display: flex;
+  align-items: center;
+}
+
+.descubra, .card{
+  background-color: #58C0AD;
+  text-align: center;
+}
+
+.card{
+  width: 33%;
+  border-style: none;
+}
+
+.card .paragrafo{
+  max-width: 98%;
+  font-size: calc(1rem + .2vw);
+}
+/*  */
+
+
+/* Daqui pra frente só tem @media */
+
+/* @media max-height start */
+  /* Quebrar os 100vh + Botões de Onepage somem*/
+  @media (max-height: 624px){
+    .teste, .instituicoes, .descubra{height: auto; padding: 10vh 5% 15vh;}
+    .botao{display: none;}
+  }
+/* @media max-height end */
+
+/* @media max-width start*/
+  @media (max-width: 1124px){
+    .button, .button_modal{width: 35%;}
+  }
+
+  /* Largura máxima do Menu sanduíche */
+  @media (max-width: 992px){
+    .titulo-2{padding: 5vh 5%;}
+    .teste section .texto-teste{padding-left: 3%; width: 60%;}
+    .instituicoes section .texto-instituicoes{width: 50%; padding: 1vh auto 0;}
+    .descubra{height: auto; padding: 2.5vh 0;}
+    .button, .button_modal{width: 40%;}
+    .card{width: 50%; margin-bottom: 2vh;}
+  }
+
+  @media (max-width: 770px){
+    .titulo-1{margin: 0 0 6%;}
+    .titulo-2{padding-bottom: 5vh;}
+    .teste{background-image: url("../img/index/fundo_menina_index.png"); background-size: cover;}
+    .teste section .texto-teste{width: 100%;}
+    .instituicoes{background-image: none; background-color: #ebf5f3;}
+    .instituicoes section .texto-instituicoes{width: 100%; padding-left: 3%}
+    .button, .button_modal{width: 30%;}
+  }
+
+  @media (max-width: 680px){
+    .botao{opacity: 100%;}
+    .teste, .instituicoes{padding: 10vh 0%;}
+    .teste section .texto-teste, .instituicoes section .texto-instituicoes{width: 100%;}
+  }
+
+  @media (max-width: 600px){
+    .card{width: 70%; margin-bottom: 7vh;}
+  }
+
+  @media (max-width: 500px){
+    .button, .button_modal{width: 35%;}
+    .card{width: 80%;}
+  }
+
+  @media (max-width: 400px){
+    .botao{width: 7%; height: 7%; left: 46.87%; opacity: 100%;}
+    .button, .button_modal{width: 45%;}
+    .card{width: 90%;}
+  }
+/* @media max-width end*/

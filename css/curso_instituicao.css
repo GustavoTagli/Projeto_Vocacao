@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* - */
+.titulo-1{ 
+  font-size: calc(1rem + 1.8vw);
+  font-weight: bold;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titulo-2{
+  font-size: calc(1rem + 1vw);
+  font-weight: bold;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titulo-5{
+  font-size: calc(1rem + .8vw);
+  margin-bottom: 2vh;
+  color: black;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titulo-6{
+  font-size: calc(0.9rem + .1vw);
+  font-weight: bold;
+  color: black;
+}
+
+.paragrafo{
+  font-size: calc(1rem + .1vw);
+  color: black;
+  font-family: 'Rubik', sans-serif;
+}
+
+.curso .container{
+  padding: calc(10vh + 75px) 5% 0;
+}
+
+.curso, .sobre-curso{
+  background-color: #215273;
+  display: flex;
+  align-items: center;
+}
+
+.curso .titulo-1, .curso .titulo-5, .curso .titulo-2{
+  color: white;
+}
+
+.curso .titulo-2{
+  margin: 5vh 0 2vh;
+}
+
+.curso .titulo-6{
+  font-size: calc(1rem + .2vw);
+  margin: 1% 0;
+}
+
+.curso .paragrafo{
+  font-size: calc(1rem + .1vw);
+  margin: 0;
+}
+
+.curso .cabecalho{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.curso .cabecalho section:nth-child(1){
+  width: 35%;
+}
+
+.curso .cabecalho section:nth-child(2){
+  width: 55%;
+}
+
+.curso .info-curso{
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  padding: 1vh 4% 1vh;
+  margin: 4vh 0;
+}
+
+.curso .foto-instituicao{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.curso .foto-instituicao figure{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.curso .foto-instituicao figure img{
+  border-radius: 10px;
+  width: 100%;
+  height: 330px;
+	object-fit: cover;
+  margin: auto;
+}
+
+.sobre-curso .container{
+  padding: 5vh 5% 6vh;
+}
+
+.sobre-curso .titulo-2{
+  margin-bottom: 3vh;
+  color: white;
+}
+
+.sobre-curso .paragrafo{
+  text-align: justify;
+  color: white;
+} 
+
+.instituicoes .container{
+  padding: 5vh 5% 15vh;
+}
+
+
+.card-body{
+  padding: 2vh 4%;
+}
+
+.card{
+  margin: 5vh 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #215273;
+  height: 215px;
+}
+
+.card p, .card h5, .card svg path, .card a{
+  color: white;
+}
+
+.card img{
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  height: 215px;
+	object-fit: cover;
+}
+
+.card .card-text{
+  font-size: calc(.8rem + .2vw);
+  text-align: justify;
+}
+/*  */
+
+footer{
+  padding: 4vh 0;
+  box-shadow: 1px 1px 7px #000000;
+}
+
+
+/* Daqui pra frente só tem @media */
+
+
+/* @media max-width start*/
+  @media (max-width: 1200px){
+    .curso .info-curso{margin: 2vh 0;}
+  }
+
+  /* Largura máxima do Menu sanduíche */
+  @media (max-width: 992px){
+    .curso .container, .sobre-curso .container, .instituicoes .container {padding-right: 4%; padding-left: 4%;}
+    .curso .cabecalho{flex-direction: column;}
+    .curso .cabecalho section:nth-child(1), .curso .cabecalho section:nth-child(2){width: 100%;}
+    .curso .titulo-1, .sobre-curso .titulo-2{margin: 1vh 0;}
+    .curso .info-curso{float: left; width: 47.5%;}
+    .curso .duracao{margin-left: 5%;}
+    .curso .foto-instituicao figure img{margin-top: 2vh;}
+    .card{height: auto; background-color: #215273;}
+    .card img{height: 200px;}
+  }
+
+  @media (max-width: 600px){
+    .curso .info-curso{width: 100%; margin: 1vh 0%;}
+    .curso .info-curso:nth-child(1){float: clear; margin: 0;}
+  }
+
+  @media (max-width: 500px){
+    .curso .foto-instituicao figure img{height: 260px;}
+  }
+
+  @media (max-width: 400px){
+    .curso .foto-instituicao figure img{height: 200px;}
+  }
+/* @media max-width end*/

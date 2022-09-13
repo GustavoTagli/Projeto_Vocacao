@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+ .modal .modal-content{
+    border-radius: 5px;
+    padding: 2vh 0 5vh;
+  }
+
+  .modal .modal-header, .modal .modal-body, .modal .modal-footer, .modal .modal-content{
+    background-color: #ebf5f3;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+  }
+
+  .modal .modal-header{
+    padding: 0;
+  }
+
+  .modal h5{
+    font-size: calc(1rem + .5vw);
+    color: black;
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal .btn-close{
+    margin: 0 2% 3vh auto;
+  }
+
+  .modal .modal-footer{
+    display: flex;
+    align-items: center;
+  }
+
+  .modal .botoes{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal .form-control{
+    height: 50px;
+    margin: 1vh auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .modal .btn{
+    color: white;
+    width: 48%;
+    text-align: center;
+  }
+
+  .modal .btn_comecar{
+    background-color: #58C0AD;
+  }
+
+  .modal .btn_recusar{
+    background-color: #215273;
+  }
+  /*  */
+
+  @media (max-width: 600px){
+    .modal .botoes{width: 70%;}
+  }
+
+  @media (max-width: 450px){
+    .modal .botoes{width: 80%;}
+  }
+
+  @media (max-width: 400px){
+    .modal .botoes{width: 90%;}
+    .modal .form-control{width: 90%;}
+  }
+
+  @media (max-width: 350px){
+    .modal .botoes{width: 95%;}
+    .modal .form-control{width: 95%;}
+  }

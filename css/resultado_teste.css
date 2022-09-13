@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* - */
+.titulo-1{
+  font-size: calc(1rem + 2vw);
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  margin: 2vh 0 4vh;
+}
+
+.principal {
+margin-bottom: 0;
+}
+
+.paragrafo{
+  font-size: calc(1rem + .3vw);
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.button{
+  width: 20%;
+  font-family: sans-serif;
+  margin: 7vh auto 4vh;
+  height: 50px;
+  font-size: calc(1rem + .2vw);
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #215273;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  display: flex;
+  align-items: center;
+}
+
+.button:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.button a{
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 10.75px 0;
+}
+/*  */
+
+.resultado{
+  background-image: url("../img/resultado/fundo.png");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: calc(5vh + 75px) 0 7vh;
+}
+
+.resultado .container{
+  padding: 0 5%;
+}
+
+.resultado section{
+  padding: 3vh 0;
+}
+
+.cursos_resultado{
+  display: flex;
+  justify-content: space-around;
+}
+
+.cursos_resultado a{
+  width: 25%;
+  margin: 2vh 2.5%;
+  border-radius: 20px;
+}
+
+.card{
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #00000049;
+}
+
+.card img, .card-img-top{
+  border-radius: 20px;
+  border: none;
+  margin: auto;
+}
+/*  */
+
+footer{
+  padding: 4vh 0;
+  box-shadow: 1px 1px 7px #000000;
+}
+
+/* Depois daqui só tem @media */
+
+  @media (max-width: 992px){
+    .cursos_resultado a{width: 31%; margin: 2vh 0%;}
+    .resultado .container{padding: 0vh 4%;}
+    .resultado section{padding:3vh 0;}
+    .button{width: 25%;}
+  }
+
+  @media (max-width: 768px){
+    .cursos_resultado a{width: 48%;}
+    .button{width: 42%;}
+  }
+
+  @media (max-width: 600px){
+    .cursos_resultado a{width: 50%;}
+    .button{width: 48%;}
+  }

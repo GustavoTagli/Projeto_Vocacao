@@ -1,0 +1,171 @@
+.titulo-1{ 
+  font-size: calc(1rem + 1.6vw);
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  margin-bottom: 5vh;
+}
+
+.paragrafo{
+  font-size: calc(1rem + .5vw);
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+.button{
+  width: 50%;
+  margin-top: 1vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: calc(1rem + .2vw);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 12px 0;
+  text-align: center;
+  background-color: white;
+  color:black;
+  border: none;
+  position: relative;
+  left: 25%;
+  top: 5%;
+}
+
+.button:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.informacoes{
+  height: 100vh;
+  background-color: #215273;
+  display: flex;
+}
+
+.informacoes .container{
+  padding: calc(7.5vh + 75px) 5% 2.5vh;
+}
+
+.display_form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form{
+  border: 1px solid white;
+  padding: 3vh 2.5% 0 5%;
+  border-radius: 10px;
+}
+
+.informacoes_texto{
+  width: 55%;
+  max-width: 55%;
+}
+
+.informacoes_foto{
+  width: 45%;
+}
+
+.informacoes_texto .label{
+  font-size: calc(1rem + .1vw);
+  color: white;
+  font-weight: bold;
+  width: auto;
+}
+
+.informacoes p{
+  color: white;
+}
+
+.informacoes_texto .input{
+  width: auto;
+}
+
+.informacoes_texto .input input{
+  font-size: calc(1rem + .1vw);
+  color: white;
+  background-color: transparent;
+  padding: .8vh 3%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.295) !important;
+}
+
+.informacoes_texto .input input:focus{
+  outline: none !important;
+  border: 1px solid white !important;
+  box-shadow: none !important;
+}
+
+#mec{
+  width: 30%;
+}
+
+.informacoes .form-check{
+  width: auto;
+  margin: 0 2%;
+  padding-top: calc(.375rem + 1px);
+}
+
+.informacoes .form-check-label{
+  color: white;
+}
+
+.informacoes_foto figure{
+  width: 100%;
+  display: flex;
+}
+
+.informacoes_foto figure img{
+  border-radius: 5%;
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+  margin: auto;
+  border: 1px solid white;
+}
+
+.upload_foto label{
+  font-size: calc(1rem + .1vw);
+  color: white;
+  font-weight: bold;
+  width: auto;
+  cursor: pointer;
+  margin: auto;
+}
+
+/* Daqui pra frente só tem @media */
+  @media (max-height: 624px){
+    .informacoes{height: auto;}
+    .informacoes .container{padding: calc(10vh + 75px) 5% 10vh;}
+  }
+
+  @media (min-height: 768px){
+    .informacoes{align-items: center;}
+    .informacoes .container{padding: 0 5%;}
+  }
+
+/* @media max-width start*/
+  @media (max-width: 992px){
+    .titulo-1{margin: 5vh 0; font-size: calc(1rem + 2.5vw);}
+    .display_form{display: flex; flex-direction: column-reverse;}
+    .informacoes_texto{width: 100%; max-width: 100%;}
+    .informacoes_foto{width: 100%; display: flex; flex-direction: column;}
+    .informacoes_foto figure{width: 100%;}
+    .informacoes_foto figure img{margin: auto}
+    .button{width: 30%; left: 70%; top: 0;}
+  }
+
+  @media (max-width: 768px){
+    .informacoes_texto .label{width: 100%;}
+    .informacoes_texto .input{width: 85%;}
+    .informacoes .form-check{margin: 0 20% 0 3%;}
+    .titulo-1{font-size: calc(1rem + 3vw);}
+  }
+
+  @media (max-width: 600px){
+    .button{width: 40%; left: 60%;}
+  }
+
+  @media (max-width: 400px){
+    .button{width: 55%; left: 45%;}
+    .informacoes .form-check{margin: 0 20% 0 4%;}
+  }
+/* @media max-width end*/

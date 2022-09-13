@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.disabled{
+  display: none;
+}
+
+.disabledbutton, .disabledForm{
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* - */
+.titulo-2{
+  font-size: calc(1rem + 2vw);  
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+.titulo-3{
+  font-size: calc(1rem + 1.3vw);  
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 1vh 0;
+}
+
+.paragrafo{
+  font-size: calc(1rem + .2vw);
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: justify;
+  margin-bottom: 4vh;
+}
+
+.botoes{
+  margin: 2vh 0 3vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn{
+  width: 20%;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: calc(1rem + .1vw);
+  border-radius: 10px;
+  padding: .8vh 3%;
+  background-color: #3C808F;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover{
+  color: white;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.btn_finalizar{
+  margin: 1vh auto;
+}
+
+.informacoes{
+  background-image:url("../img/cadastro_instituicao/bg_cadastro.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.informacoes .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: calc(10vh + 75px) 5% 5vh;
+}
+
+.esquerda{
+  color:white;
+  width: 45%;
+  position: fixed;
+}
+
+.direita{
+  width: 50%;
+  position: relative;
+  left: 51%;
+}
+
+.planos{
+  margin: 2vh 0 1vh;
+}
+
+.formulario{
+  margin: 5.5vh 0 0;
+}
+
+.caixa{
+  margin: 2vh 0;
+}
+
+.form-control, .form-select{
+  border-radius: 10px;
+  height: 50px;
+}
+
+.form-control:focus, .form-select:focus{
+  outline: none !important;
+}
+
+.rua_num, .cnpj_mec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rua_num input:nth-child(1){
+  width: 73%;
+}
+
+.rua_num input:nth-child(2){
+  width: 25%;
+}
+
+.cnpj_mec input:nth-child(1){
+  width: 63%;
+}
+
+.cnpj_mec input:nth-child(2){
+  width: 35%;
+}
+
+.planos{
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+}
+
+.form-check{
+  width: 30%;
+  padding: 0;
+  margin: 0 3%;
+  display: flex;
+}
+
+.form-check-input{
+  display: none;
+}
+
+.form-check label{
+  cursor: pointer;
+}
+
+.form-check figure{
+  margin: 0;
+}
+
+.form-check figure img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type="radio"]:checked + label figure img{
+box-shadow: 0px 0px 10px 0px white;
+}
+
+.spinner-border{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+.links{
+  color: #58C0AD;
+}
+
+.links:hover{
+  color: #58C0AD;
+  font-weight: bold;
+}
+
+.login{
+  text-align: center;
+  font-size: calc(1rem + .1vw);
+}
+/*  */

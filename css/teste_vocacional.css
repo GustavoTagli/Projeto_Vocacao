@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.fundo{
+  background-image: url("../img/teste_vocacional/teste_bg.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.teste{
+  padding: calc(5vh + 75px) 5% 0;
+}
+
+.progresso{
+  margin-bottom: 5vh;
+}
+
+.progresso h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: calc(1rem + 1.8vw);
+}
+
+.progresso p{
+  margin: 2vh 0 5vh 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: calc(.8rem + .6vw);
+}
+
+.h6s h6{
+  width: 50%;
+  font-size: calc(.8rem + .4vw);
+}
+
+.progresso_texto{
+  text-align: right;
+}
+
+.progress{
+  height: 20px;
+  background: white;
+  border-radius: 50px;
+  padding: 4px;
+}
+
+.progress-bar{
+  background-color: #74c4fa;
+  width: 0%;
+  border-radius: 50px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+.questao{
+  margin-bottom: 5vh;
+}
+
+.questao h3{
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(1rem + 1vw);
+  margin: 4vh 0 2vh;
+}
+
+.questao label{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: calc(.8rem + .6vw);
+}
+
+.form-check{
+  margin-bottom: 2vh;
+}
+
+.rdbButton{
+  display: grid;
+  grid-template-columns: .5fr 11.5fr;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin: 3.5px 10px 0 0;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: url(../img/botao/rdb_button.png) top no-repeat;
+  cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+  border-radius: 50%;
+  background: url(../img/botao/rdb_button_hover.png) top no-repeat;
+}
+
+.teste nav{
+  padding-left: 5%;
+}
+
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+	display: inline-block;
+}
+
+.simple-pagination li a, .simple-pagination li span {
+	color: #333;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px #EEE;
+  border-radius: 5px;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+	background-color: #387aa7;
+	border-color: #215273;
+  border-radius: 5px;
+}
+
+.simple-pagination .prev.current, .simple-pagination .next.current {
+	background: #215273;
+}
+
+.page-link, .active button, li button, .current, .ellipse{
+  display: none;
+}
+
+#pagination-container .disabled button{
+  display: inline-block;
+  border: none;
+  margin: 0 10px;
+}
+
+button #finalizar{
+  background-color: #215273;
+  border-radius: 5px;
+  color: white;
+}
+
+.prev.page-link, .prev, .next, .next.page-link, .prev.current, .next.current{
+	margin: 0 10px;
+  display: inline-block;
+}
+
+.disabledbutton{
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.spinner{
+  display: flex;
+}
+
+.spinner-border{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Daqui pra frente só tem @media */
+
+  @media (max-height: 650px){
+    .fundo{height: auto;}
+    .teste{padding: calc(10vh + 75px) 5% 5vh;}
+  }
+
+/* @media max-width start */
+  @media (max-width: 992px){
+    input[type="radio"] + label span{width: 18px; height: 18px;}
+    input[type="radio"]:checked + label span {background-position: center;}
+  }
+
+  @media (max-width: 600px){
+    input[type="radio"] + label span{width: 16px; height: 16px;}
+  }
+/* @media max-width end */

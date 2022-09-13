@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.modal_login .modal-header, .modal_login .modal-body, .modal_login .modal-footer, .modal_login .modal-content{
+  border-radius: 5px;
+  background-color: #ebf5f3;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+}
+
+.modal_login .modal-body{
+  padding: 0;
+}
+
+.modal_login .modal-header, .modal_login .modal-footer{
+  margin: 1vh 0;
+}
+
+.modal_login .modal-body h3{
+  font-size: calc(1rem + 1vw);
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.modal_login .modal-body h4{
+  font-size: calc(1rem + .3vw);
+  text-align: center;
+  color: black;
+}
+
+.modal_login .form-login{
+  margin: 3vh 0;
+}
+
+.modal_login .form-control{
+  height: 50px;
+  width: 60%;
+  margin: 1vh auto;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal_login .botao_login{
+  width: 33%;
+  padding: 1.3vh 0;
+  border-radius: 5px;
+  background-color: #3C808F;
+  color:white;
+  border: 0;
+  margin: 3vh 33%;
+}
+
+.login_link{
+  color: #3C808F;
+}
+
+.login_link:hover{
+  color: #3C808F;
+  font-weight: bold;
+}
+/*  */
+
+@media (max-width: 768px){
+  .modal_login .form-control{width: 70%;}
+}
